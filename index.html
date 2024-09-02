@@ -1,16 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>
-            SkyParkRuns
-        </title>
-    </head>
-    <body>
-        <h1>SkyParkRuns</h1>
-        <h2>This is my GitHub Pages website, to show off four years of programming</h2>
-        <p>Work in progress... still figuring out how to properly have python projects run in-window</p>
-        <iframe src="https://replit.com/@ParkerBatterso1/treeGrow?embed=true" width="600" height="400"></iframe>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyPark</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sticky Header -->
+    <div class="header">
+        <a href="index.html" class="home-icon">SkyParker>>></a>
+        <a href="codes.html" class="codesTab">codes</a>
+        <a href="runs.html">runs<span class="play-icon">▶🏃</span></a>
+        <a href="bikes.html">bikes<span class="bike-icon">🚴</span></a>
+        <a href="arts.html">arts🎨<span class="paintbrush-icon">🖌️</span><span class="computer-icon">🖥️</span></a>
+        <!-- Add more links as needed -->
+    </div>
 
-        <a href="Pygbag/build/web/index.html">Testing html</a>
-    </body>
+    <!-- Main Content -->
+    <div class="content">
+
+
+        <div class="card-container">
+            <div class="card">
+                <h1 style="line-height: 0.5;">SkyParker is </h1> 
+                <h3>the name I chose for my Minecraft account in 2015. Dad got it so I could code in an afterschool program; that was my gateway drug into programming
+                    and being addicted to (but mediocre at) video games. <br><br>
+                    I got into Scratch a few months after that, making little games and visuals to show my friends. My entire 5th grade class playing Cubic was an
+                    elementary school highlight-- linked in the codes page!<br><br>
+                    I learned Python (and a LOT of math) during the pandemic. <a href="https://artofproblemsolving.com/">AoPS</a>, EdX, MITX, Coursera, and CS50 helped me
+                    learn coding to pass the inside hours of lockdown.<br><br>
+                    Going into high school I took programming classes and expanded my skills to Java, HTML/CSS/JS, and SQL (the product of which is this site!). 
+                    SkyPark, this site, is the culmination of years spent learning to code and working on my personal projects. Go to the codes page, and enjoy!
+                </h3>
+                
+            </div>
+            <div class="gallery" id="gallery1">
+                <div class="gallery-images">
+                    <img src="images/code.jpg" alt="Image 1" class="gallery-img">
+                    <img src="images/Halflife.jpg" alt="Image 2" class="gallery-img">
+                    <img src="images/portalgun.JPG" alt="Image 3" class="gallery-img">
+                </div>
+                <button class="prev" onclick="moveSlide('gallery1',-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide('gallery1',1)">&#10095;</button>
+            </div>
+        </div>
+
+
+        <h2>Now I go outside, too!</h2>
+        <div class="card-container">
+            <div class="card">
+                
+                <h3>Choosing to run cross country in 9th grade after lockdown got me off the laptop and outdoors. I've dedicated much of my time to my sport, boosting
+                    my fitness and appreciation for nature. I am now much happier, and my experience outdoors has diversified. I go camping, rafting, hiking, and most 
+                    important (unique, too?) to me, <i>bikepacking</i>! For two years I fantisized about biking and camping some long distance. This summer my dad and 
+                    I made it happen! Our maiden voyage was through East San Diego in 110 degree weather, and to end the summer we biked 400 miles around the Bay Area! 
+                    <br>
+                    <br>
+                    I'm very thankful to my dad for helping me live out my dream. More trips will happen soon and go in the bikes page! 
+                </h3>
+            </div>
+            
+            <div class="gallery" id="gallery2">
+                <div class="gallery-images">
+                    <img src="images/Snake1.jpg" alt="Image 1" class="gallery-img">
+                    <img src="images/Snake2.JPG" alt="Image 2" class="gallery-img">
+                    <img src="images/Snake3.jpg" alt="Image 3" class="gallery-img">
+                    <img src="images/GoldenGate.jpg" alt="Image 4" class="gallery-img">
+                </div>
+                <p>Progress!</p>
+                <button class="prev" onclick="moveSlide('gallery2',-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide('gallery2',1)">&#10095;</button>
+            </div>
+        </div>
+        NOTE: ChatGPT was used to help create this site, but not my words. Making a website takes lots of time and AI is a helpful tool.
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
 </html>
