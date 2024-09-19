@@ -226,3 +226,39 @@ button {
 .next {
     right: 10px;
 }
+
+
+details {
+    background-color: var(--light-text);
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: background-color 0.1s;
+}
+
+summary {
+    background-color: var(--primary-color); /* Keep this color even when open */
+    color: var(--light-text);
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 3px solid var(--light-text);
+    border-radius: 5px;
+    transition: background-color 0.1s;
+}
+
+details[open] {
+    background-color: var(--light-text); /* Apply light background to everything when open */
+}
+
+details[open] summary {
+    background-color: var(--primary-color); /* Keep the primary color when open */
+    color: var(--light-text);
+    border-bottom: 3px solid transparent;
+}
+
+details {
+    margin: 5px 0 0;
+    padding: 10px;
+    background-color: var(--light-text); /* Same background for content */
+    color: var(--dark-text);
+    border-radius: 0 0 5px 5px;
+}

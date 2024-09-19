@@ -1,0 +1,30 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+
+canvas {
+  border: 3px solid black;
+  border-radius: 15px;
+  /* filter: contrast(1.5) brightness(1) saturate(1) blur(1px) sepia(1); */
+  /* animation: flickerAnimation 0.05s infinite alternate; */
+}
+
+@keyframes flickerAnimation {
+  0% {
+    filter: contrast(1.1) brightness(1.1) saturate(1) blur(0px);
+    border-radius: 20px;
+  }
+  50%{
+    filter: contrast(0.9) brightness(0.9) saturate(1.1) blur(1px);
+  }
+  100% {
+    filter: contrast(1.0) brightness(1) saturate(0.8) blur(0.5px);
+    border-radius: 30px;
+  }
+}
+
+p1 {
+  clear: left;
+}
