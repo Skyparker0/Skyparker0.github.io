@@ -62,7 +62,6 @@ document.addEventListener('DOMContentLoaded', function() {
   let directionVector = new Vector(200,-400)
   for (let i = 0; i < 100; i ++) {
     directionVector = directionVector.rotated(Math.random()*Math.PI/2 - Math.PI/4);
-    console.log(directionVector);
     posVector = posVector.added(directionVector);
     objectiveList.push(new Objective(posVector.x,posVector.y));
   }
@@ -189,7 +188,6 @@ function Car(x,y) {
     // check for objective
 
     if (this.isTouchingObjective(objectiveList[objectiveNum])) {
-      console.log(this);
       objectiveNum++;
     }
 
@@ -220,9 +218,7 @@ function Car(x,y) {
     if (downPressed) { //braking
       traction = traction.subtracted(heading.scalarMultiplied(frictionCoef*brakeConstant));
     }
-    console.log(spacePressed);
     if (spacePressed) { //handbreak
-      console.log("space!")
       traction = velocity.normalized().scalarMultiplied(-frictionCoef*brakeConstant);
     }
     //Drag

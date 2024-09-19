@@ -28,3 +28,11 @@ canvas {
 p1 {
   clear: left;
 }
+
+body {
+  transform: scale(0.6);
+  transform-origin: 0 0;
+  width: 166%;
+  height: 166%;
+  overflow: hidden; /* Prevent scrollbars */
+}
