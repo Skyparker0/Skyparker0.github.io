@@ -53,7 +53,7 @@ a {
 
 .play-icon {
     display: inline-block;
-    animation: jump 1s infinite;
+    animation: jump 2s infinite;
 }
 
 @keyframes jump {
@@ -61,7 +61,7 @@ a {
         transform: translateX(0);
     }
     50% {
-        transform: translateX(10px); /* Adjust distance as needed */
+        transform: translateX(5px); /* Adjust distance as needed */
     }
 }
 
@@ -75,13 +75,13 @@ a {
         transform: translateX(0%) scaleX(-1) scale(1.5); /* Adjust starting position */
     }
     50% {
-        transform: translateX(100%) scaleX(-1); /* Adjust distance */
+        transform: translateX(30%) scaleX(-1) scale(1.5); /* Adjust distance */
     }
 }
 
 .paintbrush-icon {
     display: inline-block;
-    animation: dip 3s ease-in-out infinite;
+    animation: dip 2s ease-in-out infinite;
 }
 
 @keyframes dip {
@@ -89,7 +89,7 @@ a {
         transform: translateX(-10px) translateY(-10px) scale(1.5); /* Adjust starting position */
     }
     50% {
-        transform: translateX(-10px) translateY(-15px) scale(1.5) scaleX(-1); /* Adjust distance */
+        transform: translateX(-10px) translateY(-10px) scale(1.5) scaleX(-1); /* Adjust distance */
     }
 }
 
