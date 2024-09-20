@@ -190,10 +190,14 @@ a {
 
 .gallery {
     position: relative;
-    max-width: 300px; /* Adjust width as needed */
+    
     margin: auto;
     overflow: hidden;
     border-radius: 0px 20px 20px 0px;
+}
+
+.indexGallery {
+    max-width: 300px; /* Adjust width as needed */
 }
 
 .gallery-images {
@@ -251,7 +255,7 @@ details[open] {
 details[open] summary {
     background-color: var(--primary-color); /* Keep the primary color when open */
     color: var(--light-text);
-    border-bottom: 3px solid transparent;
+    border-bottom: 3px solid black;
 }
 
 details {
