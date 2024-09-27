@@ -196,6 +196,23 @@ a {
     border-radius: 0px 20px 20px 0px;
 }
 
+#gallery3 {
+    max-width:700px;
+}
+
+#gallery4 {
+    max-width: 500px;
+}
+
+#gallery5 {
+    max-width: 500px;
+}
+
+#gallery6 {
+    max-width: 700px;
+    max-height: 500px;
+}
+
 .indexGallery {
     max-width: 300px; /* Adjust width as needed */
 }
@@ -207,7 +224,9 @@ a {
 
 .gallery-img {
     width: 100%;
-    flex: 0 0 100%; /* Each image takes up the full width of the gallery */
+    height: auto;
+    object-fit: contain;
+    object-position: top;
 }
 
 button {

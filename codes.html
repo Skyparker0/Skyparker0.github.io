@@ -20,10 +20,10 @@
 
     <!-- Main Content -->
     <div class="content">
-        <h1>Gallary of my years coding;</h1>
+        <h1>Gallary of my years coding</h1>
         <!-- Example Project 1 -->
         <h3 style="text-align: left;">From my 5th grade game</h3>
-        <h3 style="text-align: right;">to my latest rendering + physics experiment</h3>
+        <h3 style="text-align: right;">to my latest rendering & physics experiment</h3>
 
         <div style="display: flex; justify-content: space-around;">
             <iframe src="https://scratch.mit.edu/projects/207326478/embed" allowtransparency="true" width="500" height="400" frameborder="0" scrolling="no"></iframe>
@@ -33,7 +33,7 @@
         
 
 
-        <details open>
+        <details >
             <summary>Code Base Repository</summary>
             <a href="https://github.com/Skyparker0/AllLocalProgrammingProjects">
                 <p>Link to the github repository that hosts all of my (half decent) projects. 
@@ -45,28 +45,28 @@
 
 
 
-        <details>
+        <details open>
             <summary>All Ten</summary>
-            <p>I helped my dad by writing a solver for the prototype of "all ten;" a math puzzle game where each day there
-                is a different set of 4 numbers, which can be combined through mathematical operations to create the numbers
-                1-10. My python script discovered all solution sets to determine if the game could be hosted for a while, like wordle.
+            <p>I helped my dad by coding a solver for the prototype of "all ten;" the web version is up 
+                <a href="https://beastacademy.com/all-ten">https://beastacademy.com/all-ten</a>
+                My python script discovered all solution sets.
                 <br>
-                My source code is still hosted on the AoPS website, and the game gets on average 20,000+ users daily! 
+                The game gets on average 20,000+ users daily! 
             </p>
-            <a href="https://beastacademy.com/all-ten"><img src="images/AllTenWeb.png" width="200" target="_blank">Try out the game!</a>
+            <a href="https://beastacademy.com/all-ten"><img src="images/AllTenWeb.png" width="400" target="_blank"><br>Try out the game!</a>
             
         </details>
 
 
 
-        <details>
+        <details open>
             <summary>Fractals</summary>
             <div>
-                <p>I do a lot of fractal generation. I like experimenting with render depth and color schemes. Looking for 
+                <p>I do lots of fractal generation. I like experimenting with render depth and color schemes. Looking for 
                     interesting julia set locations gives good results, and good wallpapers.
                 </p>
             </div>
-            <div class="gallery" id="gallery3" width="1200px">
+            <div class="gallery" id="gallery3">
                 <!-- Make sure to change the gallery number -->
                 <div class="gallery-images">
                     
@@ -82,16 +82,62 @@
 
 
 
-        <details>
+        <details open>
             <summary>Demo Games</summary>
-            <p>Description</p>
+            <p>These are small visual projects I made to play around with, or proof of concepts for games.</p>
+            <div class="gallery" id="gallery4">
+                <!-- Make sure to change the gallery number -->
+                <div class="gallery-images">
+                    <img src="images/TreeRender.png" alt="Image 1" class="gallery-img">
+                    <img src="images/Sandbox.png" alt="Image 1" class="gallery-img">
+                    <img src="images/VerletIntegrationExample.png" alt="Image 2" class="gallery-img">
+                    <img src="images/GameOfLife.png" alt="Image 3" class="gallery-img">
+                    <img src="images/LightsAndWalls.png " alt="Image 3" class="gallery-img">
+                    <img src="images/HiGround.png " alt="Image 3" class="gallery-img">
+                </div>
+                <button class="prev" onclick="moveSlide('gallery4',-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide('gallery4',1)">&#10095;</button>
+            </div>
+            
         </details>
 
+        <details open>
+            <summary>Map Generation</summary>
+            <p>Generating maps using a tileset. The Carcassone map uses regular grid scanning, while the MS Paint city
+                relies on my Wave Function Collapse algorithm. (used in tilebased video games)
+            </p>
+            <div class="gallery" id="gallery6">
+                <!-- Make sure to change the gallery number -->
+                <div class="gallery-images">
+                    <img src="images/Carcassone.PNG" alt="Image 1" class="gallery-img">
+                    <img src="images/WaveFunctionCollapseGenerating.png" alt="Image 1" class="gallery-img">
+                    <img src="images/WaveFunctionCollapseDone.png" alt="Image 1" class="gallery-img">
+                </div>
+                <button class="prev" onclick="moveSlide('gallery6',-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide('gallery6',1)">&#10095;</button>
+            </div>
+        </details>
 
-
-        <details>
+        <details open>
             <summary>Image processing</summary>
-            <p>Description</p>
+            <p>(mostly) Failed attempts to get into image and video processing</p>
+            <div class="gallery" id="gallery5">
+                <!-- Make sure to change the gallery number -->
+                <div class="gallery-images">
+                    <img src="images/DrawingFail.PNG" alt="Image 1" class="gallery-img">
+                    <img src="images/VideoFilters.png" alt="Image 1" class="gallery-img">
+                    <img src="images/FlyingPixelsFace.png" alt="Image 1" class="gallery-img">
+                </div>
+                <button class="prev" onclick="moveSlide('gallery5',-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide('gallery5',1)">&#10095;</button>
+            </div>
+        </details>
+
+        <details open>
+            <summary>Project Euler</summary>
+            <p>I solved Project Euler 1-100 with python, besides a few that I couldn't get. My solutions are 
+                in the ProjectEuler folder on the AllLocalProgrammingProjects Github repo.
+            </p>
         </details>
     </div>
 
