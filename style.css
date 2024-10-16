@@ -213,6 +213,10 @@ a {
     max-height: 500px;
 }
 
+#gallery7 {
+    max-width: 400px;
+}
+
 .indexGallery {
     max-width: 300px; /* Adjust width as needed */
 }
